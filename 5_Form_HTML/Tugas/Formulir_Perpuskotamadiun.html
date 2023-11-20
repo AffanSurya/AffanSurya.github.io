@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpus Madiun</title>
+    <style>
+        input {
+            /* width 500px; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>PERPUSTAKAAN KOTA MADIUN</center>
+    </h1>
+    <div class="container" style=" width: 75%; margin: auto;">
+        <div class="title" style="background-color: rgb(46, 135, 180); color: white;">
+            <h2>Formulir Pendaftaran</h2>
+        </div>
+        <section>
+            <form action="#">
+                <label for="noIdentitas">No. Identitas </label><br>
+                <input type="text" placeholder="NIK">
+                <br><br>
+                <label for="password">Password </label><br>
+                <input type="password" placeholder="password">
+                <br><br>
+                <label for="ttl">Tempat / Tanggal Lahir </label><br>
+                <input type="text" placeholder="Tempat Lahir">
+                <b>/</b>
+                <input type="date" name="tanggalLahir" id="tanggalLahir">
+                <br><br>
+                <label for="alamat">Alamat </label><br>
+                <textarea name="alamat" id="alamat" cols="45" rows="5"></textarea>
+                <br><br>
+                <label for="noHp">No HP </label><br>
+                <input type="text" placeholder="0812xxxxxxxx">
+                <br><br>
+                <label for="pendTerakhir">Pendidikan Terakhir </label><br>
+                <select name="pendTerakhir" id="pendTerakhir">
+                    <option value="SD">SD</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMA/SMK">SMA / SMK</option>
+                    <option value="D3">D3</option>
+                    <option value="S1">S1</option>
+                </select>
+                <br><br>
+                <label for="kelamin">Jenis Kelamin </label><br><br>
+                <input type="radio" name="jenis_kelamin">Laki-Laki
+                <input type="radio" name="jenis_kelamin">Perempuan
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
