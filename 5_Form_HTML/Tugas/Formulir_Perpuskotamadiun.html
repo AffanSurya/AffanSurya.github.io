@@ -6,8 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpus Madiun</title>
     <style>
+        .container {
+            width: 75%;
+            margin: auto;
+            /* box-shadow: 5px; */
+            box-shadow: 2px 2px 2px 2px rgb(81, 77, 77);
+            padding: 15px;
+        }
+
+        .title {
+            background-color: rgb(46, 135, 180);
+            color: white;
+            width: 76%;
+            margin: auto;
+            /* box-shadow: 5px; */
+            box-shadow: 2px 2px 2px rgb(81, 77, 77);
+            padding: 10px;
+            /* padding: 1px; */
+        }
+
         input {
             /* width 500px; */
+        }
+
+        button {
+            background-color: rgb(46, 135, 180);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: medium;
+            padding: 5px;
         }
     </style>
 </head>
@@ -16,29 +44,35 @@
     <h1>
         <center>PERPUSTAKAAN KOTA MADIUN</center>
     </h1>
-    <div class="container" style=" width: 75%; margin: auto;">
-        <div class="title" style="background-color: rgb(46, 135, 180); color: white;">
-            <h2>Formulir Pendaftaran</h2>
-        </div>
+    <div class="title">
+        <h2>Formulir Pendaftaran</h2>
+    </div>
+    <div class="container">
+
         <section>
             <form action="#">
                 <label for="noIdentitas">No. Identitas </label><br>
                 <input type="text" placeholder="NIK">
                 <br><br>
+
                 <label for="password">Password </label><br>
                 <input type="password" placeholder="password">
                 <br><br>
+
                 <label for="ttl">Tempat / Tanggal Lahir </label><br>
                 <input type="text" placeholder="Tempat Lahir">
                 <b>/</b>
                 <input type="date" name="tanggalLahir" id="tanggalLahir">
                 <br><br>
+
                 <label for="alamat">Alamat </label><br>
                 <textarea name="alamat" id="alamat" cols="45" rows="5"></textarea>
                 <br><br>
+
                 <label for="noHp">No HP </label><br>
                 <input type="text" placeholder="0812xxxxxxxx">
                 <br><br>
+
                 <label for="pendTerakhir">Pendidikan Terakhir </label><br>
                 <select name="pendTerakhir" id="pendTerakhir">
                     <option value="SD">SD</option>
@@ -48,9 +82,27 @@
                     <option value="S1">S1</option>
                 </select>
                 <br><br>
-                <label for="kelamin">Jenis Kelamin </label><br><br>
+
+                <label for="kelamin">Jenis Kelamin </label><br>
                 <input type="radio" name="jenis_kelamin">Laki-Laki
                 <input type="radio" name="jenis_kelamin">Perempuan
+                <br><br>
+
+                <label for="bukuFavorit">Buku Favorit</label>
+                <br>
+                <input type="checkbox" name="Romance" id="Romance">Romance
+                <input type="checkbox" name="Fantasi" id="Fantasi">Fantasi
+                <input type="checkbox" name="Sci-Fi" id="Sci-Fi">Sci-Fi
+                <input type="checkbox" name="Horor" id="Horor">Horor
+                <input type="checkbox" name="Misteri" id="Misteri">Misteri <br>
+                <input type="checkbox" name="Thriller" id="Thriller">Thriller
+                <input type="checkbox" name="Komedi" id="Komedi">Komedi
+                <input type="checkbox" name="Sejarah" id="Sejarah">Sejarah
+                <input type="checkbox" name="Petualangan" id="Petualangan">Petualangan
+                <input type="checkbox" name="Keluarga" id="Keluarga">Keluarga
+                <br><br>
+
+                <button type="submit">Daftar</button>
             </form>
         </section>
     </div>
