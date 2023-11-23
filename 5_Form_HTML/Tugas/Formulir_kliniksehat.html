@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Sehat</title>
+    <style>
+        .container {
+            width: 75%;
+            margin: auto;
+            /* box-shadow: 5px; */
+            box-shadow: 2px 2px 2px 2px rgb(81, 77, 77);
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .title {
+            background-color: rgb(22, 201, 30);
+            color: white;
+            width: 76%;
+            margin: auto;
+            box-shadow: 2px 2px 2px rgb(81, 77, 77);
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>KLINIK SEHAT</center>
+    </h1>
+    <div class="title">
+        <h2>Formulir Pendaftaran</h2>
+    </div>
+    <div class="container">
+
+        <section>
+            <form action="#">
+                <label for="nama">Nama Lengkap</label><br>
+                <input type="text" placeholder="Nama Lengkap">
+                <br><br>
+
+                <label for="password">Password </label><br>
+                <input type="password" placeholder="password">
+                <br><br>
+
+                <label for="usia">Usia </label><br>
+                <input type="text" placeholder="Usia">
+                <br><br>
+
+                <label for="alamat">Alamat </label><br>
+                <textarea name="alamat" id="alamat" cols="45" rows="5"></textarea>
+                <br><br>
+
+                <label for="noHp">No HP </label><br>
+                <input type="text" placeholder="0812xxxxxxxx">
+                <br><br>
+
+
+                <label for="kelamin">Jenis Kelamin </label><br>
+                <input type="radio" name="jenis_kelamin">Laki-Laki
+                <input type="radio" name="jenis_kelamin">Perempuan
+                <br><br>
+
+                <label for="keluhan">Keluhan</label>
+                <br>
+                <input type="checkbox" name="Demam" id="Demam">Demam
+                <input type="checkbox" name="Pusing" id="Pusing">Pusing
+                <input type="checkbox" name="Batuk" id="Batuk">Batuk
+                <input type="checkbox" name="Pilek" id="Pilek">Pilek <br>
+                <input type="checkbox" name="Nyeri" id="Nyeri">Nyeri
+                <input type="checkbox" name="Muntah" id="Muntah">Muntah
+                <input type="checkbox" name="Kesulitan bernapas" id="Kesulitan bernapas">Kesulitan bernapas
+                <input type="checkbox" name="Kehilangan nafsu makan" id="Kehilangan nafsu makan">Kehilangan nafsu makan
+                <br><br>
+
+
+                <label for=""> Note: Jika tidak ada dalam pilihan diatas, bisa mengisi keluhan dibawah</label><br>
+                <textarea name="keluhan" id="keluhan1" cols="45" rows="5"></textarea>
+                <br><br>
+
+                <label for="pembayaran">Pembayaran</label><br>
+                <select name="pembayaran" id="pembayaran">
+                    <option value="pemAsuransi">Asuransi kesehatan</option>
+                    <option value="pembSendiri">Pembayaran sendiri</option>
+                    <option value="pembSendiri">Pembayaran sendiri</option>
+                    <option value="pembBpjs">BPJS</option>
+                </select>
+                <br><br>
+
+
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
