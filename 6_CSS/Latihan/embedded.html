@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Style</title>
+    <style>
+        /* 2. Embedded Styles */
+        h1 {
+            color: blue;
+            font-family: Verdana;
+            font-size: 300%;
+        }
+
+        p {
+            color: red;
+            font-family: 'Courier New', Courier;
+            font-size: 160%;
+        }
+
+        /* 4. Pentabelan Menggunakan CSS id */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        table#t01 {
+            width: 100%;
+            background-color: #f1f1c1;
+        }
+
+        /* 5. Style Tabel Menggunakan Class */
+        table.names {
+            width: 100%;
+            background-color: #f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 2. Embedded Styles -->
+    <h1>Judul</h1>
+    <p>Paragraph</p>
+    <br><br>
+
+    <!-- 4. Pentabelan Menggunakan CSS id -->
+    <table style="width: 100%;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <th>Rusi</th>
+            <th>Anandi</th>
+            <th>18</th>
+        </tr>
+
+
+    </table>
+    <h2>Table with ID</h2>
+    <table id="t01">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <th>Novya</th>
+            <th>Selena</th>
+            <th>18</th>
+        </tr>
+    </table>
+
+    <!-- 5. Style Tabel Menggunakan Class -->
+    <h2>Table with class</h2>
+    <table class="names">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <th>Novya</th>
+            <th>Selena</th>
+            <th>18</th>
+        </tr>
+    </table>
+</body>
+
+</html>
