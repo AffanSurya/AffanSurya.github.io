@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 1. Menggunakan tag <div></div> -->
+    <div class="satubag">
+        <h2>Pengumuman</h2>
+        <p>Seminar Nasional</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, porro!</p>
+    </div>
+
+    <!-- Praktikum 1 -->
+    <div style="position: relative;">
+        <div
+            style="opacity: 0.5; position: absolute; left: 50px; top: -30px; width: 300px; height: 150px; background-color: #40b3df;">
+        </div>
+        <div
+            style="margin-top: 30px; width: 360px; height: 130px; padding: 20px; border-radius: 10px; border: 10px solid #ee872a; font-size: 120%; ">
+            <h1>CSS = Bagian ini tentang text</h1>
+            <div style="letter-spacing: 12px; font-size: 15px; position: relative; left: 25px; top: 25px;">
+                Text
+            </div>
+            <span style="background-color: #b4009e; color: #fff;">Kotak</span>
+        </div>
+    </div>
+
+    <!-- Praktikum 2 -->
+    <div class="satubag">
+        <h2>Tentang Kota Madiun</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae minus quaerat esse ea doloremque.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias facilis corporis repellat deserunt quisquam.
+            Assumenda veniam rerum quidem et, unde quas libero illum! Inventore odio laborum rerum repudiandae harum
+            quisquam repellendus aspernatur. Corrupti molestias quasi aut sit earum illum, itaque optio a animi, nobis
+            nostrum, ipsum iste ipsam suscipit eligendi.</p>
+    </div>
+
+    <div class="satubag">
+        <h2>Kota Wisata</h2>
+
+        <p>Magetan.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur, delectus natus voluptate atque
+            eligendi.</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, fugit eum. Ducimus, culpa eos fugiat,
+            quis animi iusto, aliquid vel officia molestias deleniti minus earum.</p>
+    </div>
+
+    <div class="satubag">
+        <h2>Ponorogo</h2>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, recusandae.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis harum debitis corrupti sapiente repellat
+            nulla ut, repudiandae deserunt dolor fugit.</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat libero, eveniet placeat quaerat, nisi
+            quibusdam eius sunt maiores minima sint aspernatur quos soluta illum beatae!</p>
+    </div>
+
+    <!-- Praktikum 3 -->
+    <div id="header">
+        <h1>Kota Wisata</h1>
+    </div>
+
+    <div id="nav">
+        Madiun <br>
+        Magetan <br>
+        Ponorogo <br>
+    </div>
+
+    <div id="section">
+        <h2>Ponorogo</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam praesentium error laborum vitae corporis?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, molestiae harum vero doloribus reprehenderit a
+            voluptas, dicta modi impedit eum et dolorem aut. Vel, fugiat!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium iure, id reiciendis aut cum dolore quos
+            earum distinctio? Ducimus soluta cum voluptates nisi obcaecati neque?</p>
+    </div>
+    <div id="footer">
+        Info lebih lanjut kunjungi www.kuliner.jatim
+    </div>
+
+    <!-- 2. Display -->
+    <div class="header">
+        <h1>SELAMAT DATANG DI WEBKU</h1>
+    </div>
+    <div class="navigasi inline">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFIL</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="navigasi inline-block">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFIL</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="navigasi block">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFIL</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="navigasi none">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFIL</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <h2>Bagian ini adalah isi web</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cumque fugiat iste ea. Molestiae, nemo! Est cum
+            velit consequuntur placeat perferendis corporis, architecto ut aspernatur.</p>
+    </div>
+
+    <!-- 3. Dimension -->
+    <div class="satu">
+        Satu
+    </div>
+
+    <div class="dua">
+        Dua
+    </div>
+
+    <!-- 4. Overflow -->
+    <div class="satu-overflow">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem amet nisi odio facilis commodi,
+        reiciendis a ad optio et in quibusdam totam quaerat corrupti vitae dolorum laudantium corporis asperiores. Odit
+        odio voluptatibus rerum illum in, dolorum, aperiam alias fugit cupiditate rem exercitationem non enim sit quia
+        repudiandae dignissimos sint facere possimus, hic corporis ipsam cumque vel. Fugit architecto sunt laboriosam
+        quasi similique libero adipisci repellendus optio excepturi? Facilis quia nemo ut sunt recusandae doloribus,
+        cupiditate explicabo. Illum laudantium delectus eveniet deserunt pariatur inventore natus itaque sit quibusdam
+        dolorum. Voluptatum ex neque culpa debitis iure maiores repellendus quibusdam aliquid vel iusto?
+    </div>
+</body>
+
+</html>
