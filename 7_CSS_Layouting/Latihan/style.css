@@ -78,9 +78,196 @@
     background-color: aqua;
 }
 
+/* 4. Overflow */
 .satu-overflow {
     width: 200px;
     height: 200px;
     background-color: pink;
     overflow: auto;
+}
+
+/* 5.  Box Model*/
+.box-model {
+    display: inline-block;
+}
+
+/* 5.1. Margin */
+
+.satu-margin {
+    width: 120px;
+    height: 120px;
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 30px;
+}
+
+.dua-margin {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin-top: 0px;
+    margin-right: 50px;
+    margin-left: -50px;
+}
+
+/* 5.2. Border */
+.satu-border {
+    width: 120px;
+    height: 120px;
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-left: 5px dashed gray;
+}
+
+.dua-border {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin-left: -50px;
+    border-top: 10px dotted white;
+}
+
+/* 5.3. Padding */
+.satu-padding {
+    width: 120px;
+    height: 120px;
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-left: 5px dashed gray;
+    padding-left: 50px;
+}
+
+.dua-padding {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin-left: -50px;
+    border-top: 10px dotted white;
+    padding-top: 30px;
+}
+
+/* 6. Box Sizing */
+.satu-boxSizing {
+    width: 120px;
+    height: 120px;
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-left: 5px dashed gray;
+    padding-left: 50px;
+}
+
+.dua-boxSizing {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin-left: -50px;
+    border-top: 10px dotted white;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+/* 7. Float */
+/* 7.1. Text Wrapping */
+.container-textWrapping {
+    background-color: red;
+    margin: auto;
+    width: 500px;
+    padding: 5px;
+}
+
+.gambar {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 5px;
+}
+
+.clear {
+    clear: left;
+}
+
+/* 7.2. Image Gallery */
+.container-imageGallery {
+    margin: auto;
+    width: 500px;
+}
+
+.gallery {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: lightgreen;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+
+.clear {
+    clear: left;
+}
+
+/* 7.3. Multi-Colum Layout */
+.container-multiColum {
+    margin: auto;
+    width: 800px;
+    text-align: center;
+}
+
+.sidebar-multiColum {
+    width: 150px;
+    height: 500px;
+    background-color: lightgreen;
+    float: left;
+}
+
+.main-multiColum {
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+    float: left;
+}
+
+.rightbar-multiColum {
+    width: 150px;
+    height: 500px;
+    background-color: red;
+    float: left;
+}
+
+/* 8. Position */
+.container-position {
+    margin: auto;
+    width: 800px;
+    height: 2000px;
+}
+
+.sidebar-position,
+.main-position,
+.rightbar-position {
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar-position {
+    background-color: lightblue;
+    position: static;
+    top: 3000px;
+}
+
+.main-position {
+    background-color: lightgray;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.rightbar-position {
+    background-color: red;
+    position: relative;
+    top: 400px;
+    left: 10px;
 }
