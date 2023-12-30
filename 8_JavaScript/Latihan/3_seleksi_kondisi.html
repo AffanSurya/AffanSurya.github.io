@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleksi Kondisi</title>
+</head>
+<script>
+    // true / false
+    function test() {
+        val1 = window.prompt("Nilai I : ")
+        val2 = window.prompt("Nilai II : ")
+
+        document.write(`<br> ${val1}==${val2} <br>`)
+        document.write(val1 == val2)
+        document.write(`<br> ${val1}!=${val2} <br>`)
+        document.write(val1 != val2)
+        document.write(`<br> ${val1}&gt${val2} <br>`)
+        document.write(val1 > val2)
+        document.write(`<br> ${val1}&lt${val2} <br>`)
+        document.write(val1 < val2)
+    }
+</script>
+
+<body>
+
+    <!-- true / false -->
+    <input type="button" value="relational" name="button1" onclick="test()">
+    <br><br>
+
+    <script>
+        // if...else
+        var nilai = prompt("Nilai (0-100): ", 0)
+        var hasil = ""
+
+        if (nilai >= 60) {
+            hasil = "Lulus";
+        } else {
+            hasil = "Tidak Lulus";
+        }
+        document.write("Hasil : " + hasil)
+    </script>
+</body>
+
+</html>

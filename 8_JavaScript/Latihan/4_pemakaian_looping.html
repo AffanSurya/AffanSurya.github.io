@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemakaian Looping</title>
+</head>
+<script>
+    // switch case
+    function test() {
+        val1 = window.prompt("Input Nilai (1-5): ");
+        switch (val1) {
+            case "1":
+                document.write("bilangan satu");
+                break;
+            case "2":
+                document.write("bilangan dua");
+                break;
+            case "3":
+                document.write("bilangan tiga");
+                break;
+            case "4":
+                document.write("bilangan empat");
+                break;
+            case "5":
+                document.write("bilangan lima");
+                break;
+
+            default:
+                document.write("bilangan lainnya");
+                break;
+        }
+    }
+</script>
+
+<body>
+    <!-- switch case -->
+    <input type="button" value="switch" name="button1" onclick=test()>
+    <br><br>
+
+    <script>
+        // for loop
+        document.write("for looping: <br>");
+        for (let x = 0; x < 10; x++) {
+            document.write(x + "<br>");
+
+        }
+
+        // do...while
+        document.write("<br><br> do...while <br>");
+        var x = 0;
+        do {
+            document.write(x + "<br>");
+            x++;
+        } while (x <= 10);
+
+        // while
+        document.write("<br><br> while <br>");
+        var x = 0;
+        while (x <= 10) {
+            document.write(x + "<br>");
+            x++;
+        }
+    </script>
+</body>
+
+</html>
