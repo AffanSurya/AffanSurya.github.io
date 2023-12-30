@@ -1,0 +1,121 @@
+@import url(https://db.onlinewebfonts.com/c/67b7807845cb161c497f422ec8f85fb2?family=Benito+Clean+Italic);
+
+
+.rcolor {
+    color: #e84d6a;
+}
+
+body {
+    background-color: #272727;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    background-color: #272727;
+    top: 0px;
+    left: 100px;
+    right: 100px;
+    position: fixed;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+nav .navigation {
+    float: right;
+    margin-top: 10px;
+}
+
+nav .logo a {
+    font-family: "Benito Clean Italic", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+nav .line {
+    width: 1245px;
+    height: 2px;
+    background-color: gray;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.container {
+    width: 1245px;
+    margin: 100px auto;
+    height: 1000px;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 600px;
+    float: right;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 56px;
+    margin: 1px;
+}
+
+#profil {
+    margin-top: 50px;
+}
+
+.edu-img {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.edu-img li,
+.edu-img li span,
+.edu-img li img {
+    border-radius: 5%;
+}
+
+.edu-img li {
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+}
+
+.edu-img li span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    line-height: 300px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.edu-img li:hover span {
+    opacity: 1;
+}
+
+.edu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
