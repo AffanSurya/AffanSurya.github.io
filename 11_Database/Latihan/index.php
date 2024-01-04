@@ -16,6 +16,22 @@
     </div>
     <br><br>
 
+    <?php
+    if (isset($_GET['pesan'])) {
+        $pesan = $_GET['pesan'];
+
+        if ($pesan == "input") {
+            echo "Data berhasil di input";
+        } elseif ($pesan == "update") {
+            echo "Data berhasil di update";
+        } elseif ($pesan == "hapus") {
+            echo "Data berhasil di hapus";
+        }
+    }
+    ?>
+    <br>
+    <a href="input.php" class="tombol">+ Tambah data baru</a>
+
     <h3>Data Mahasiswa</h3>
     <table border="1" class="table">
         <tr>
@@ -23,6 +39,7 @@
             <th>Nama</th>
             <th>Alamat</th>
             <th>Kelas</th>
+            <th>Opsi</th>
         </tr>
         <?php
         include "koneksi.php";
@@ -36,6 +53,10 @@
                 <td><?= $data['nama']; ?></td>
                 <td><?= $data['alamat']; ?></td>
                 <td><?= $data['kelas']; ?></td>
+                <td>
+                    <a href="edit.php?npm=<?= $data['npm'] ?>">Edit</a> |
+                    <a href="hapus.php?npm=<?= $data['npm'] ?>">Hapus</a>
+                </td>
             </tr>
         <?php endwhile; ?>
 
