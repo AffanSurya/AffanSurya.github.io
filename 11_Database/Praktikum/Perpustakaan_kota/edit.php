@@ -36,7 +36,7 @@
                     <td><input type="date" name="tanggal_peminjaman" value="<?php echo $data['tanggal_peminjaman'] ?>"></td>
                 </tr>
 
-                <input type="hidden" value="<?php echo $data['id_peminjaman'] ?>">
+                <input type="hidden" name="id_peminjaman" value="<?= $data['id_peminjaman']; ?>">
 
                 <tr>
                     <td></td>

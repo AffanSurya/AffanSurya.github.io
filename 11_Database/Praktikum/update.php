@@ -32,7 +32,7 @@ if (isset($_GET['web'])) {
     }
 
     if ($_GET['web'] == "service") {
-        $id_service = $_GET['id_service'];
+        $id_service = $_POST['id_service'];
         $jenis_service = $_POST['jenis_service'];
         $deskripsi = $_POST['deskripsi'];
         $biaya = $_POST['biaya'];

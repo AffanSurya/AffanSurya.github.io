@@ -41,7 +41,7 @@
                     <td><input type="text" name="waktu_pengerjaan" value="<?php echo $data['waktu_pengerjaan'] ?>"></td>
                 </tr>
 
-                <input type="hidden" name="id_service">
+                <input type="hidden" name="id_service" value="<?= $data['id_service']; ?>">
                 <tr>
                     <td></td>
                     <td><input type="submit" value="Simpan"></td>
