@@ -70,6 +70,10 @@
                 <td><?= $data['keluhan']; ?></td>
                 <td><?= $data['diagnosis']; ?></td>
                 <td><?= $data['tanggal_kunjungan']; ?></td>
+                <td>
+                    <a href="edit.php?id_pasien=<?= $data['id_pasien'] ?>">Edit</a> |
+                    <a href="../hapus.php?web=klinik&id_pasien=<?= $data['id_pasien'] ?>">Hapus</a>
+                </td>
             </tr>
         <?php endwhile;
         $conn->close() ?>

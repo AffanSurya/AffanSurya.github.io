@@ -63,6 +63,10 @@
                 <td><?= $data['nama_peminjam']; ?></td>
                 <td><?= $data['judul_buku']; ?></td>
                 <td><?= $data['tanggal_peminjaman']; ?></td>
+                <td>
+                    <a href="edit.php?web=perpus&id_peminjaman=<?= $data['id_peminjaman'] ?>">Edit</a> |
+                    <a href="../hapus.php?web=perpus&id_peminjaman=<?= $data['id_peminjaman'] ?>">Hapus</a>
+                </td>
             </tr>
         <?php endwhile;
         $conn->close() ?>

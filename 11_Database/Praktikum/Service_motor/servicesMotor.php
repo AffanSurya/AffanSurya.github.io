@@ -65,6 +65,10 @@
                 <td><?= $data['deskripsi']; ?></td>
                 <td><?= $data['biaya']; ?></td>
                 <td><?= $data['waktu_pengerjaan']; ?></td>
+                <td>
+                    <a href="edit.php?web=service&id_service=<?= $data['id_service'] ?>">Edit</a> |
+                    <a href="../hapus.php?web=service&id_service=<?= $data['id_service'] ?>">Hapus</a>
+                </td>
             </tr>
         <?php endwhile;
         $conn->close() ?>
