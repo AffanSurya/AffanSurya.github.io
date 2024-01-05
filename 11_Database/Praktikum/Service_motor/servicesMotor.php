@@ -27,6 +27,22 @@
 
     <br><br>
 
+    <?php
+    if (isset($_GET['pesan'])) {
+        $pesan = $_GET['pesan'];
+
+        if ($pesan == "input") {
+            echo "Data berhasil di input";
+        } elseif ($pesan == "update") {
+            echo "Data berhasil di update";
+        } elseif ($pesan == "hapus") {
+            echo "Data berhasil di hapus";
+        }
+    }
+    ?>
+    <br>
+    <a href="input-services.php" class="tombol">+ Tambah data baru</a>
+
     <h3>Data Services Motor</h3>
     <table border="1" class="table">
         <tr>
@@ -37,7 +53,7 @@
             <th>Waktu Pengerjaan</th>
         </tr>
         <?php
-        include "../Latihan/koneksi.php";
+        include "../../Latihan/koneksi.php";
 
         $result = $conn->query("select * from service_motor");
 

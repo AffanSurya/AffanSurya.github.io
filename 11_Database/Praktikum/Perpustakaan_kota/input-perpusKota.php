@@ -14,23 +14,19 @@
     <br><br>
 
     <h3>Input data baru</h3>
-    <form action="input-aksi.php" method="post">
+    <form action="input-aksi.php?web=perpus" method="post">
         <table>
             <tr>
-                <td>NPM</td>
-                <td><input type="text" name="npm"></td>
-            </tr>
-            <tr>
                 <td>Nama</td>
-                <td><input type="text" name="nama"></td>
+                <td><input type="text" name="nama_peminjam"></td>
             </tr>
             <tr>
-                <td>Alamat</td>
-                <td><input type="text" name="alamat"></td>
+                <td>Judul Buku</td>
+                <td><input type="text" name="judul_buku"></td>
             </tr>
             <tr>
-                <td>Kelas</td>
-                <td><input type="text" name="kelas"></td>
+                <td>Tanggal Peminjaman</td>
+                <td><input type="date" name="tanggal_peminjaman"></td>
             </tr>
             <tr>
                 <td></td>

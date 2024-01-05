@@ -26,6 +26,21 @@
     <h1>Klinik Kesehatan</h1>
 
     <br><br>
+    <?php
+    if (isset($_GET['pesan'])) {
+        $pesan = $_GET['pesan'];
+
+        if ($pesan == "input") {
+            echo "Data berhasil di input";
+        } elseif ($pesan == "update") {
+            echo "Data berhasil di update";
+        } elseif ($pesan == "hapus") {
+            echo "Data berhasil di hapus";
+        }
+    }
+    ?>
+    <br>
+    <a href="input-klinikKesehatan.php" class="tombol">+ Tambah data baru</a>
 
     <h3>Data Klinik Kesehatan</h3>
     <table border="1" class="table">
@@ -40,7 +55,7 @@
             <th>Tanggal Kunjungan</th>
         </tr>
         <?php
-        include "../Latihan/koneksi.php";
+        include "../../Latihan/koneksi.php";
 
         $result = $conn->query("select * from klinik_kesehatan");
 
